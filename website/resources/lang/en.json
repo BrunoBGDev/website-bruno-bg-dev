@@ -1,0 +1,58 @@
+{
+    "nav.home": "Home",
+    "nav.projects": "Projects",
+    "nav.about": "About",
+    "nav.contact": "Contact",
+
+    "hero.availability": "Available for opportunities",
+    "hero.role": "Full Stack Developer.",
+    "hero.description": "Full Stack Developer with experience building scalable solutions using Laravel, React, and AWS.",
+    "hero.cta": "Let's talk",
+    "hero.scroll": "Scroll to explore",
+
+    "about.label": "01 / About",
+    "about.title": "About me.",
+    "about.stat.experience": "5+ years",
+    "about.stat.experience_description": "Professional experience",
+    "about.stat.role": "Full Stack",
+    "about.stat.role_description": "Web development",
+    "about.stat.scale": "Scalability",
+    "about.stat.scale_description": "Fintech solutions",
+
+    "experience.label": "02 / Experience",
+    "experience.title": "Professional experience.",
+    "experience.current": "Present",
+
+    "skills.label": "03 / Skills",
+    "skills.title": "Technologies I work with.",
+
+    "skills.backend": "Backend",
+    "skills.frontend": "Frontend",
+    "skills.database": "Database",
+    "skills.infrastructure": "Infrastructure & Tools",
+
+    "projects.label": "04 / Projects",
+    "projects.title": "Selected projects.",
+    "projects.view": "View project",
+    "projects.github": "GitHub",
+
+    "contact.label": "05 / Contact",
+    "contact.title": "Let's talk.",
+    "contact.description": "Have a project, opportunity, or simply want to connect? Feel free to reach out.",
+    "contact.location": "Brazil · Remote",
+    "contact.available": "Available for new opportunities",
+
+    "contact.form.name": "Name",
+    "contact.form.email": "Email",
+    "contact.form.subject": "Subject",
+    "contact.form.message": "Message",
+    "contact.form.name_placeholder": "Your name",
+    "contact.form.email_placeholder": "you@email.com",
+    "contact.form.subject_placeholder": "How can I help?",
+    "contact.form.message_placeholder": "Write your message...",
+    "contact.form.submit": "Send message",
+
+    "footer.rights": "All rights reserved.",
+    "footer.built_with": "Built with Laravel & Blade",
+    "footer.top": "Back to top"
+}

@@ -1,0 +1,58 @@
+{
+    "nav.home": "Início",
+    "nav.projects": "Projetos",
+    "nav.about": "Sobre",
+    "nav.contact": "Contato",
+
+    "hero.availability": "Disponível para oportunidades",
+    "hero.role": "Desenvolvedor Full Stack.",
+    "hero.description": "Desenvolvedor Full Stack com experiência na construção de soluções escaláveis utilizando Laravel, React e AWS.",
+    "hero.cta": "Vamos conversar",
+    "hero.scroll": "Role para explorar",
+
+    "about.label": "01 / Sobre",
+    "about.title": "Sobre mim.",
+    "about.stat.experience": "5+ anos",
+    "about.stat.experience_description": "Experiência profissional",
+    "about.stat.role": "Full Stack",
+    "about.stat.role_description": "Desenvolvimento web",
+    "about.stat.scale": "Escalabilidade",
+    "about.stat.scale_description": "Soluções para fintech",
+
+    "experience.label": "02 / Experiência",
+    "experience.title": "Experiência profissional.",
+    "experience.current": "Presente",
+
+    "skills.label": "03 / Habilidades",
+    "skills.title": "Tecnologias que utilizo.",
+
+    "skills.backend": "Backend",
+    "skills.frontend": "Frontend",
+    "skills.database": "Banco de dados",
+    "skills.infrastructure": "Infraestrutura & Ferramentas",
+
+    "projects.label": "04 / Projetos",
+    "projects.title": "Projetos selecionados.",
+    "projects.view": "Ver projeto",
+    "projects.github": "GitHub",
+
+    "contact.label": "05 / Contato",
+    "contact.title": "Vamos conversar.",
+    "contact.description": "Tem um projeto, oportunidade ou simplesmente quer trocar uma ideia? Entre em contato.",
+    "contact.location": "Brasil · Remoto",
+    "contact.available": "Disponível para novas oportunidades",
+
+    "contact.form.name": "Nome",
+    "contact.form.email": "Email",
+    "contact.form.subject": "Assunto",
+    "contact.form.message": "Mensagem",
+    "contact.form.name_placeholder": "Seu nome",
+    "contact.form.email_placeholder": "seu@email.com",
+    "contact.form.subject_placeholder": "Como posso ajudar?",
+    "contact.form.message_placeholder": "Escreva sua mensagem...",
+    "contact.form.submit": "Enviar mensagem",
+
+    "footer.rights": "Todos os direitos reservados.",
+    "footer.built_with": "Desenvolvido com Laravel & Blade",
+    "footer.top": "Topo"
+}
