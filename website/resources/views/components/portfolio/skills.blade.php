@@ -7,20 +7,19 @@
         <span
             class="font-mono text-sm uppercase tracking-[0.2em] text-portfolio-blue"
         >
-            03 / Skills
+            03 / {{ __('skills.section') }}
         </span>
 
         <h2
             class="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl portfolio-text"
         >
-            Tecnologias.
+            {{ __('skills.title') }}
         </h2>
 
         <p
             class="mt-5 text-base leading-7 text-portfolio-muted sm:text-lg"
         >
-            Tecnologias e ferramentas que fazem parte do meu dia a dia no
-            desenvolvimento de aplicações web.
+            {{ __('skills.description') }}
         </p>
     </div>
 
@@ -34,7 +33,7 @@
             <div class="flex items-center justify-between">
 
                 <h3 class="text-xl font-semibold portfolio-text">
-                    Backend
+                    {{ __('skills.backend.title') }}
                 </h3>
 
                 <span
@@ -48,8 +47,7 @@
             <p
                 class="mt-2 text-sm leading-6 text-portfolio-muted"
             >
-                Desenvolvimento de APIs, regras de negócio e aplicações
-                escaláveis.
+                {{ __('skills.backend.description') }}
             </p>
 
             <div class="mt-6 flex flex-wrap gap-2">
@@ -63,15 +61,23 @@
                 </span>
 
                 <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
-                    Node.js
+                    Livewire
                 </span>
 
                 <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
-                    REST API
+                    JavaScript
                 </span>
 
                 <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
-                    Bash
+                    C
+                </span>
+
+                <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
+                    RESTful APIs
+                </span>
+
+                <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
+                    Event-driven Architecture
                 </span>
 
             </div>
@@ -84,7 +90,7 @@
             <div class="flex items-center justify-between">
 
                 <h3 class="text-xl font-semibold portfolio-text">
-                    Frontend
+                    {{ __('skills.frontend.title') }}
                 </h3>
 
                 <span
@@ -98,13 +104,13 @@
             <p
                 class="mt-2 text-sm leading-6 text-portfolio-muted"
             >
-                Interfaces modernas, responsivas e integração com APIs.
+                {{ __('skills.frontend.description') }}
             </p>
 
             <div class="mt-6 flex flex-wrap gap-2">
 
                 <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
-                    React
+                    ReactJS
                 </span>
 
                 <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
@@ -116,11 +122,15 @@
                 </span>
 
                 <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
-                    Blade
+                    HTML
                 </span>
 
                 <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
-                    Tailwind CSS
+                    CSS
+                </span>
+
+                <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
+                    Bootstrap
                 </span>
 
             </div>
@@ -133,7 +143,7 @@
             <div class="flex items-center justify-between">
 
                 <h3 class="text-xl font-semibold portfolio-text">
-                    Database
+                    {{ __('skills.database.title') }}
                 </h3>
 
                 <span
@@ -147,7 +157,7 @@
             <p
                 class="mt-2 text-sm leading-6 text-portfolio-muted"
             >
-                Modelagem, consultas, otimização e gerenciamento de dados.
+                {{ __('skills.database.description') }}
             </p>
 
             <div class="mt-6 flex flex-wrap gap-2">
@@ -160,10 +170,6 @@
                     SQL
                 </span>
 
-                <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
-                    Redis
-                </span>
-
             </div>
         </div>
 
@@ -174,7 +180,7 @@
             <div class="flex items-center justify-between">
 
                 <h3 class="text-xl font-semibold portfolio-text">
-                    Infrastructure & Tools
+                    {{ __('skills.infrastructure.title') }}
                 </h3>
 
                 <span
@@ -188,8 +194,7 @@
             <p
                 class="mt-2 text-sm leading-6 text-portfolio-muted"
             >
-                Infraestrutura, containers, deploy e ferramentas de
-                desenvolvimento.
+                {{ __('skills.infrastructure.description') }}
             </p>
 
             <div class="mt-6 flex flex-wrap gap-2">
@@ -207,7 +212,23 @@
                 </span>
 
                 <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
+                    GitLab
+                </span>
+
+                <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
                     CI/CD
+                </span>
+
+                <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
+                    RabbitMQ
+                </span>
+
+                <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
+                    Jira
+                </span>
+
+                <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
+                    CLI
                 </span>
 
                 <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
@@ -215,7 +236,11 @@
                 </span>
 
                 <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
-                    RabbitMQ
+                    Windows
+                </span>
+
+                <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
+                    macOS
                 </span>
 
             </div>

@@ -23,20 +23,19 @@
                 <span
                     class="font-mono text-sm uppercase tracking-[0.2em] text-portfolio-blue"
                 >
-                    05 / Contact
+                    05 / {{ __('contact.section') }}
                 </span>
 
                 <h2
                     class="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl portfolio-text"
                 >
-                    Vamos conversar.
+                    {{ __('contact.title') }}
                 </h2>
 
                 <p
                     class="mt-6 max-w-md text-base leading-7 text-portfolio-muted sm:text-lg"
                 >
-                    Tem um projeto, uma oportunidade ou simplesmente quer
-                    trocar uma ideia? Envie uma mensagem.
+                    {{ __('contact.description') }}
                 </p>
 
                 {{-- Informações de contato --}}
@@ -46,7 +45,7 @@
                         <span
                             class="font-mono text-xs uppercase tracking-wider portfolio-muted"
                         >
-                            Email
+                            {{ __('contact.email.label') }}
                         </span>
 
                         <a
@@ -61,7 +60,7 @@
                         <span
                             class="font-mono text-xs uppercase tracking-wider portfolio-muted"
                         >
-                            Localização
+                            {{ __('contact.location.label') }}
                         </span>
 
                         <p class="mt-1 text-base portfolio-muted">
@@ -73,7 +72,7 @@
                         <span
                             class="font-mono text-xs uppercase tracking-wider portfolio-muted"
                         >
-                            Disponibilidade
+                            {{ __('contact.availability.label') }}
                         </span>
 
                         <div class="mt-2 flex items-center gap-2">
@@ -83,7 +82,7 @@
                             ></span>
 
                             <span class="text-sm portfolio-text">
-                                Disponível para oportunidades
+                                {{ __('contact.availability.value') }}
                             </span>
 
                         </div>
@@ -95,6 +94,26 @@
 
             {{-- Formulário --}}
             <div>
+
+                {{-- Mensagem de sucesso --}}
+                @if (session('success'))
+                    <div
+                        class="mb-5 rounded-xl border border-green-500/20 bg-green-500/10 px-4 py-3 text-sm text-green-400"
+                        role="alert"
+                    >
+                        {{ session('success') }}
+                    </div>
+                @endif
+
+                {{-- Erro geral de validação --}}
+                @if ($errors->any())
+                    <div
+                        class="mb-5 rounded-xl border border-red-500/20 bg-red-500/10 px-4 py-3 text-sm text-red-400"
+                        role="alert"
+                    >
+                        {{ __('contact.messages.validation_error') }}
+                    </div>
+                @endif
 
                 <form
                     action="{{ route('contact.store') }}"
@@ -111,16 +130,23 @@
                             for="name"
                             class="mb-2 block text-sm font-medium portfolio-text"
                         >
-                            Nome
+                            {{ __('contact.form.name.label') }}
                         </label>
 
                         <input
                             type="text"
                             id="name"
                             name="name"
-                            placeholder="Seu nome"
+                            value="{{ old('name') }}"
+                            placeholder="{{ __('contact.form.name.placeholder') }}"
                             class="portfolio-input rounded-xl px-4 py-3"
                         >
+
+                        @error('name')
+                            <p class="mt-2 text-sm text-red-400">
+                                {{ $message }}
+                            </p>
+                        @enderror
 
                     </div>
 
@@ -131,16 +157,23 @@
                             for="email"
                             class="mb-2 block text-sm font-medium portfolio-text"
                         >
-                            Email
+                            {{ __('contact.form.email.label') }}
                         </label>
 
                         <input
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="seu@email.com"
+                            value="{{ old('email') }}"
+                            placeholder="{{ __('contact.form.email.placeholder') }}"
                             class="portfolio-input rounded-xl px-4 py-3"
                         >
+
+                        @error('email')
+                            <p class="mt-2 text-sm text-red-400">
+                                {{ $message }}
+                            </p>
+                        @enderror
 
                     </div>
 
@@ -151,16 +184,23 @@
                             for="subject"
                             class="mb-2 block text-sm font-medium portfolio-text"
                         >
-                            Assunto
+                            {{ __('contact.form.subject.label') }}
                         </label>
 
                         <input
                             type="text"
                             id="subject"
                             name="subject"
-                            placeholder="Sobre o que você gostaria de conversar?"
+                            value="{{ old('subject') }}"
+                            placeholder="{{ __('contact.form.subject.placeholder') }}"
                             class="portfolio-input rounded-xl px-4 py-3"
                         >
+
+                        @error('subject')
+                            <p class="mt-2 text-sm text-red-400">
+                                {{ $message }}
+                            </p>
+                        @enderror
 
                     </div>
 
@@ -171,25 +211,32 @@
                             for="message"
                             class="mb-2 block text-sm font-medium portfolio-text"
                         >
-                            Mensagem
+                            {{ __('contact.form.message.label') }}
                         </label>
 
                         <textarea
                             id="message"
                             name="message"
                             rows="6"
-                            placeholder="Escreva sua mensagem..."
+                            placeholder="{{ __('contact.form.message.placeholder') }}"
                             class="portfolio-input rounded-xl px-4 py-3"
-                        ></textarea>
+                        >{{ old('message') }}</textarea>
+
+                        @error('message')
+                            <p class="mt-2 text-sm text-red-400">
+                                {{ $message }}
+                            </p>
+                        @enderror
 
                     </div>
 
                     {{-- Botão --}}
-                    <button style="cursor: pointer"
+                    <button
+                        style="cursor: pointer"
                         type="submit"
                         class="inline-flex w-full items-center justify-center gap-2 rounded-xl portfolio-text bg-portfolio-orange px-6 py-3.5 text-sm font-semibold transition duration-300 hover:-translate-y-0.5 hover:bg-orange-500"
                     >
-                        Enviar mensagem
+                        {{ __('contact.form.submit') }}
 
                         <span aria-hidden="true">
                             →

@@ -5,11 +5,11 @@
         <div>
             <p class="text-sm portfolio-muted">
                 © {{ date('Y') }} Bruno Braga.
-                Todos os direitos reservados.
+                {{ __('footer.rights') }}
             </p>
 
             <p class="mt-1 font-mono text-xs portfolio-muted">
-                Built with Laravel & Blade
+                {{ __('footer.built_with') }}
             </p>
         </div>
 
@@ -33,7 +33,7 @@
 
             <a href="#home" aria-label="Voltar ao topo"
                 class="ml-2 flex h-9 items-center gap-2 rounded-full border border-white/10 px-4 text-xs portfolio-text transition hover:bg-white/5 portfolio-tech-tag hover:portfolio-muted">
-                Topo
+                {{ __('footer.top') }}
 
                 <span aria-hidden="true">
                     ↑

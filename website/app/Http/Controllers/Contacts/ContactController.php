@@ -1,26 +1,42 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Contacts;
 
+use App\Http\Controllers\Controller;
+use App\Mail\ContactReceived;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
     public function store(Request $request)
     {
-        // 1. Validação dos dados
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'subject' => 'required|string|max:255',
-            'message' => 'required|string',
-        ]);
+        $validated = $request->validate(
+            [
+                'name' => ['required', 'string', 'max:255'],
+                'email' => [
+                    'required',
+                    'email',
+                    'max:255',
+                    'unique:contacts,email',
+                ],
+                'subject' => ['required', 'string', 'max:255'],
+                'message' => ['required', 'string', 'max:5000'],
+            ],
+            [
+                'email.unique' => __('contact.validation.email.unique'),
+            ]
+        );
 
-        // 2. Salvar no banco de dados
-        Contact::create($validated);
+        $contact = Contact::create($validated);
 
-        // 3. Redirecionar com mensagem de sucesso
-        return back()->with('success', 'Mensagem enviada com sucesso! Entrarei em contato em breve.');
+        Mail::to(config('mail.contact_notification.address'))
+            ->send(new ContactReceived($contact));
+
+        return redirect()
+            ->back()
+            ->withFragment('contact')
+            ->with('success', __('contact.messages.success'));
     }
 }

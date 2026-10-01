@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Contacts\ContactController;
 
 Route::view('/', 'pages.home')->name('home');
 

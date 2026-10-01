@@ -16,7 +16,7 @@
                 ></span>
 
                 <span>
-                    Disponível para oportunidades
+                    {{ __('hero.availability') }}
                 </span>
             </div>
 
@@ -28,7 +28,7 @@
                 <br>
 
                 <span class="text-portfolio-blue">
-                    Full Stack Developer.
+                    {{ __('hero.title') }}.
                 </span>
             </h1>
 
@@ -36,9 +36,7 @@
             <p
                 class="mt-7 max-w-xl text-base leading-7 text-portfolio-muted sm:text-lg"
             >
-                Desenvolvedor Full Stack focado na construção de
-                aplicações web escaláveis, com experiência em Laravel,
-                React e AWS.
+                {{ __('hero.description') }}
             </p>
 
             {{-- Ações --}}
@@ -48,9 +46,9 @@
 
                 <a
                     href="#contact"
-                    class=" portfolio-text inline-flex items-center gap-2 rounded-full bg-portfolio-orange transition hover:-translate-y-0.5 px-6 py-3 text-sm font-semibold transition duration-300 hover:-translate-y-0.5 hover:bg-orange-500"
+                    class="portfolio-text inline-flex items-center gap-2 rounded-full bg-portfolio-orange px-6 py-3 text-sm font-semibold transition duration-300 hover:-translate-y-0.5 hover:bg-orange-500"
                 >
-                    Entrar em contato
+                    {{ __('hero.contact') }}
 
                     <span aria-hidden="true">
                         →
@@ -95,6 +93,15 @@
                         <span class="text-white">$name</span>
                         <span class="text-white">=</span>
                         <span class="text-green-400">'Bruno Braga'</span>
+                        <span class="text-white">;</span>
+                    </div>
+
+                    <div class="pl-4">
+                        <span class="text-purple-400">public</span>
+                        <span class="text-white">string</span>
+                        <span class="text-white">$experience</span>
+                        <span class="text-white">=</span>
+                        <span class="text-green-400">'5+ years'</span>
                         <span class="text-white">;</span>
                     </div>
 
@@ -167,7 +174,7 @@
     {{-- Indicador de scroll --}}
     <a
         href="#about"
-        aria-label="Ir para a seção Sobre mim"
+        aria-label="{{ __('hero.scroll') }}"
         class="absolute bottom-6 left-1/2 -translate-x-1/2 portfolio-muted transition hover:portfolio-text"
     >
         <svg
