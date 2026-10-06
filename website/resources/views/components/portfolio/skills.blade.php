@@ -2,7 +2,6 @@
     id="skills"
     class="py-24 lg:py-32"
 >
-    {{-- Cabeçalho --}}
     <div class="max-w-2xl">
         <span
             class="font-mono text-sm uppercase tracking-[0.2em] text-portfolio-blue"
@@ -23,10 +22,7 @@
         </p>
     </div>
 
-    {{-- Categorias --}}
     <div class="mt-12 grid gap-4 md:grid-cols-2">
-
-        {{-- Backend --}}
         <div
             class="portfolio-card rounded-2xl p-6"
         >
@@ -83,7 +79,6 @@
             </div>
         </div>
 
-        {{-- Frontend --}}
         <div
             class="portfolio-card rounded-2xl p-6"
         >
@@ -136,7 +131,6 @@
             </div>
         </div>
 
-        {{-- Database --}}
         <div
             class="portfolio-card rounded-2xl p-6"
         >
@@ -173,7 +167,6 @@
             </div>
         </div>
 
-        {{-- Infrastructure --}}
         <div
             class="portfolio-card rounded-2xl p-6"
         >
@@ -242,9 +235,7 @@
                 <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
                     macOS
                 </span>
-
             </div>
         </div>
-
     </div>
 </section>

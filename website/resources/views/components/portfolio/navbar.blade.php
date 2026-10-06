@@ -5,11 +5,7 @@
     <nav
         class="portfolio-navbar portfolio-transition w-full rounded-2xl border p-1.5 shadow-2xl shadow-black/20 backdrop-blur-xl sm:w-auto sm:rounded-full"
     >
-
-        {{-- Navbar principal --}}
         <div class="flex items-center justify-between gap-1">
-
-            {{-- Brand --}}
             <a
                 href="#home"
                 class="portfolio-text px-4 py-2 text-sm font-semibold"
@@ -17,7 +13,6 @@
                 Bruno Braga
             </a>
 
-            {{-- Navegação desktop --}}
             <div class="hidden items-center sm:flex">
 
                 <a
@@ -50,7 +45,6 @@
 
             </div>
 
-            {{-- Controles desktop --}}
             <div class="hidden items-center sm:flex">
 
                 <div
@@ -100,7 +94,6 @@
 
             </div>
 
-            {{-- Botão mobile --}}
             <button
                 type="button"
                 id="mobile-menu-button"
@@ -117,7 +110,6 @@
 
         </div>
 
-        {{-- Menu mobile --}}
         <div
             id="mobile-menu"
             class="portfolio-border hidden border-t px-2 pb-2 pt-3 sm:hidden"
@@ -154,8 +146,6 @@
                 </a>
 
             </div>
-
         </div>
-
     </nav>
 </header>

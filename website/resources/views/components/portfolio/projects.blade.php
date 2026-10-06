@@ -2,11 +2,9 @@
     id="projects"
     class="py-24 lg:py-32"
 >
-    {{-- Cabeçalho --}}
+
     <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-
         <div class="max-w-2xl">
-
             <span
                 class="font-mono text-sm uppercase tracking-[0.2em] text-portfolio-blue"
             >
@@ -24,30 +22,20 @@
             >
                 {{ __('projects.description') }}
             </p>
-
         </div>
-
     </div>
 
-    {{-- Projetos --}}
     <div class="mt-12 grid gap-6 lg:grid-cols-2">
-
-        {{-- Projeto 1 --}}
         <article
             class="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] transition duration-500 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.04]"
         >
-
-            {{-- Preview --}}
             <div
                 class="relative flex aspect-[16/9] items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-purple-950/40 via-[#09090f] to-blue-950/30"
             >
-
-                {{-- Glow --}}
                 <div
                     class="absolute h-40 w-40 rounded-full bg-purple-600/20 blur-3xl transition duration-500 group-hover:scale-150"
                 ></div>
 
-                {{-- Conteúdo visual --}}
                 <div class="relative text-center">
 
                     <span
@@ -64,20 +52,15 @@
 
                 </div>
 
-                {{-- Número --}}
                 <span
                     class="absolute right-5 top-5 font-mono text-xs text-white/30"
                 >
                     01
                 </span>
-
             </div>
 
-            {{-- Conteúdo --}}
             <div class="p-6 sm:p-8">
-
                 <div class="flex items-start justify-between gap-4">
-
                     <div>
                         <h3 class="text-2xl font-semibold portfolio-text">
                             Temisio
@@ -88,7 +71,6 @@
                         </p>
                     </div>
 
-                    {{-- Link --}}
                     <a
                         href="https://github.com/BrunoBGDev/Temisio-APP"
                         target="_blank"
@@ -98,11 +80,9 @@
                     >
                         ↗
                     </a>
-
                 </div>
 
                 <div class="mt-6 flex flex-wrap gap-2">
-
                     <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
                         Laravel
                     </span>
@@ -118,30 +98,19 @@
                     <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
                         Tailwind CSS
                     </span>
-
                 </div>
-
             </div>
-
         </article>
 
-
-        {{-- Projeto 2 --}}
         <article
             class="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] transition duration-500 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.04]"
         >
-
-            {{-- Preview --}}
             <div
                 class="relative flex aspect-[16/9] items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-blue-950/40 via-[#09090f] to-purple-950/30"
             >
-
-                {{-- Glow --}}
                 <div
                     class="absolute h-40 w-40 rounded-full bg-blue-600/20 blur-3xl transition duration-500 group-hover:scale-150"
                 ></div>
-
-                {{-- Conteúdo visual --}}
                 <div class="relative text-center">
 
                     <span
@@ -158,20 +127,15 @@
 
                 </div>
 
-                {{-- Número --}}
                 <span
                     class="absolute right-5 top-5 font-mono text-xs text-white/30"
                 >
                     02
                 </span>
-
             </div>
 
-            {{-- Conteúdo --}}
             <div class="p-6 sm:p-8">
-
                 <div class="flex items-start justify-between gap-4">
-
                     <div>
                         <h3 class="text-2xl font-semibold portfolio-text">
                             so_long
@@ -182,7 +146,6 @@
                         </p>
                     </div>
 
-                    {{-- Link --}}
                     <a
                         href="https://github.com/BrunoBGDev/so_long"
                         target="_blank"
@@ -192,11 +155,9 @@
                     >
                         ↗
                     </a>
-
                 </div>
 
                 <div class="mt-6 flex flex-wrap gap-2">
-
                     <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
                         C
                     </span>
@@ -208,30 +169,22 @@
                     <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
                         Makefile
                     </span>
-
                 </div>
-
             </div>
-
         </article>
 
-
-        {{-- Projeto 3 --}}
         <article
             class="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] transition duration-500 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.04]"
         >
 
-            {{-- Preview --}}
             <div
                 class="relative flex aspect-[16/9] items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-green-950/20 via-[#09090f] to-blue-950/30"
             >
 
-                {{-- Glow --}}
                 <div
                     class="absolute h-40 w-40 rounded-full bg-green-600/10 blur-3xl transition duration-500 group-hover:scale-150"
                 ></div>
 
-                {{-- Conteúdo visual --}}
                 <div class="relative text-center">
 
                     <span
@@ -248,20 +201,15 @@
 
                 </div>
 
-                {{-- Número --}}
                 <span
                     class="absolute right-5 top-5 font-mono text-xs text-white/30"
                 >
                     03
                 </span>
-
             </div>
 
-            {{-- Conteúdo --}}
             <div class="p-6 sm:p-8">
-
                 <div class="flex items-start justify-between gap-4">
-
                     <div>
                         <h3 class="text-2xl font-semibold portfolio-text">
                             Casal Piscineiro
@@ -272,7 +220,6 @@
                         </p>
                     </div>
 
-                    {{-- Link --}}
                     <a
                         href="https://github.com/BrunoBGDev/web-site-casal-piscineiro"
                         target="_blank"
@@ -282,40 +229,28 @@
                     >
                         ↗
                     </a>
-
                 </div>
 
                 <div class="mt-6 flex flex-wrap gap-2">
-
                     <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
                         {{ __('projects.casal_piscineiro.status') }}
                     </span>
-
                 </div>
-
             </div>
-
         </article>
 
-
-        {{-- Projeto 4 --}}
         <article
             class="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] transition duration-500 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.04]"
         >
 
-            {{-- Preview --}}
             <div
                 class="relative flex aspect-[16/9] items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-orange-950/20 via-[#09090f] to-purple-950/30"
             >
-
-                {{-- Glow --}}
                 <div
                     class="absolute h-40 w-40 rounded-full bg-orange-600/10 blur-3xl transition duration-500 group-hover:scale-150"
                 ></div>
 
-                {{-- Conteúdo visual --}}
                 <div class="relative text-center">
-
                     <span
                         class="font-mono text-xs uppercase tracking-[0.3em] text-white/30"
                     >
@@ -327,23 +262,17 @@
                     >
                         Portfolio
                     </h3>
-
                 </div>
 
-                {{-- Número --}}
                 <span
                     class="absolute right-5 top-5 font-mono text-xs text-white/30"
                 >
                     04
                 </span>
-
             </div>
 
-            {{-- Conteúdo --}}
             <div class="p-6 sm:p-8">
-
                 <div class="flex items-start justify-between gap-4">
-
                     <div>
                         <h3 class="text-2xl font-semibold portfolio-text">
                             Personal Portfolio
@@ -354,7 +283,6 @@
                         </p>
                     </div>
 
-                    {{-- Link --}}
                     <a
                         href="https://github.com/BrunoBGDev/website-bruno-bg-dev"
                         target="_blank"
@@ -364,11 +292,9 @@
                     >
                         ↗
                     </a>
-
                 </div>
 
                 <div class="mt-6 flex flex-wrap gap-2">
-
                     <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
                         Laravel
                     </span>
@@ -380,13 +306,8 @@
                     <span class="portfolio-tech-tag rounded-full px-3 py-1 text-xs">
                         Tailwind CSS
                     </span>
-
                 </div>
-
             </div>
-
         </article>
-
     </div>
-
 </section>

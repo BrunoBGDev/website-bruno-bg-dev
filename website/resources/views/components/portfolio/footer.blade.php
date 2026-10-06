@@ -1,7 +1,6 @@
 <footer class="portfolio-border border-t py-8">
 
     <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-        {{-- Copyright --}}
         <div>
             <p class="text-sm portfolio-muted">
                 © {{ date('Y') }} Bruno Braga.
@@ -13,9 +12,7 @@
             </p>
         </div>
 
-        {{-- Links --}}
         <div class="flex items-center gap-2">
-
             <a href="https://github.com/BrunoBGDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
                 class="portfolio-social-link">
                 <i class="fa-brands fa-github" style="size: 1rem"></i>

@@ -3,8 +3,6 @@
     class="py-24 lg:py-32"
 >
     <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-
-        {{-- Título --}}
         <div>
             <span
                 class="font-mono text-sm uppercase tracking-[0.2em] text-portfolio-blue"
@@ -25,18 +23,12 @@
             </p>
         </div>
 
-        {{-- Timeline --}}
         <div class="relative">
-
-            {{-- Linha vertical --}}
             <div
                 class="absolute left-[7px] top-2 bottom-2 w-px portfolio-timeline-line"
             ></div>
 
-            {{-- MapiPay --}}
             <div class="relative pl-10">
-
-                {{-- Marcador --}}
                 <div
                     class="absolute left-0 top-2 flex h-4 w-4 items-center justify-center rounded-full border border-portfolio-blue/50 bg-portfolio-blue/10"
                 >
@@ -45,35 +37,30 @@
                     ></span>
                 </div>
 
-                {{-- Período --}}
                 <span
                     class="font-mono text-xs uppercase tracking-wider text-portfolio-blue"
                 >
                     {{ __('experience.mapipay.period') }}
                 </span>
 
-                {{-- Cargo --}}
                 <h3
                     class="mt-3 text-2xl font-semibold portfolio-text"
                 >
                     {{ __('experience.mapipay.role') }}
                 </h3>
 
-                {{-- Empresa --}}
                 <p
                     class="mt-1 text-base portfolio-muted"
                 >
                     MapiPay
                 </p>
 
-                {{-- Descrição --}}
                 <p
                     class="mt-5 text-base leading-7 text-portfolio-muted"
                 >
                     {{ __('experience.mapipay.description') }}
                 </p>
 
-                {{-- Tecnologias --}}
                 <div class="mt-5 flex flex-wrap gap-2">
 
                     <span class="portfolio-tag portfolio-badge portfolio-text">
@@ -104,10 +91,7 @@
 
             </div>
 
-            {{-- GeBIT --}}
             <div class="relative mt-14 pl-10">
-
-                {{-- Marcador --}}
                 <div
                     class="absolute left-0 top-2 flex h-4 w-4 items-center justify-center rounded-full border border-white/20 bg-portfolio-surface"
                 >
@@ -170,10 +154,7 @@
 
             </div>
 
-            {{-- ReactJS --}}
             <div class="relative mt-14 pl-10">
-
-                {{-- Marcador --}}
                 <div
                     class="absolute left-0 top-2 flex h-4 w-4 items-center justify-center rounded-full border border-white/20 bg-portfolio-surface"
                 >
@@ -236,10 +217,7 @@
 
             </div>
 
-            {{-- Cyber Chain --}}
             <div class="relative mt-14 pl-10">
-
-                {{-- Marcador --}}
                 <div
                     class="absolute left-0 top-2 flex h-4 w-4 items-center justify-center rounded-full border border-white/20 bg-portfolio-surface"
                 >
@@ -294,10 +272,7 @@
 
             </div>
 
-            {{-- JavaScript Trainee --}}
             <div class="relative mt-14 pl-10">
-
-                {{-- Marcador --}}
                 <div
                     class="absolute left-0 top-2 flex h-4 w-4 items-center justify-center rounded-full border border-white/20 bg-portfolio-surface"
                 >
@@ -347,12 +322,8 @@
                     <span class="portfolio-tag portfolio-badge portfolio-text">
                         Scrum
                     </span>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
 </section>
