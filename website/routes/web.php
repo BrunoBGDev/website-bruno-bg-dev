@@ -3,7 +3,17 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Contacts\ContactController;
 
-Route::view('/', 'pages.home')->name('home');
+Route::get('/', function (Request $request) {
+    $language = strtolower($request->getPreferredLanguage());
+
+    $locale = str_starts_with($language, 'en')
+        ? 'en'
+        : 'pt-br';
+
+    return redirect()->route('locale', [
+        'locale' => $locale,
+    ]);
+})->name('home');
 
 Route::get('/{locale}', function () {
     return view('pages.home');
