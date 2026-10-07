@@ -7,12 +7,14 @@ use App\Mail\ContactReceived;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
 {
     public function store(Request $request)
     {
-        $validated = $request->validate(
+        $validator = Validator::make(
+            $request->all(),
             [
                 'name' => ['required', 'string', 'max:255'],
                 'email' => [
@@ -29,13 +31,27 @@ class ContactController extends Controller
             ]
         );
 
+        if ($validator->fails()) {
+            return redirect()
+                ->route('locale', [
+                    'locale' => $request->route('locale'),
+                ])
+                ->withFragment('contact')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        $validated = $validator->validated();
+
         $contact = Contact::create($validated);
 
         Mail::to(config('mail.contact_notification.address'))
             ->send(new ContactReceived($contact));
 
         return redirect()
-            ->back()
+            ->route('locale', [
+                'locale' => $request->route('locale'),
+            ])
             ->withFragment('contact')
             ->with('success', __('contact.messages.success'));
     }

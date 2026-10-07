@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Contacts\ContactController;
 
 Route::get('/', function (Request $request) {
@@ -16,8 +16,15 @@ Route::get('/', function (Request $request) {
     ]);
 })->name('home');
 
-Route::get('/{locale}', function () {
-    return view('pages.home');
-})->whereIn('locale', ['pt-br', 'en'])->middleware('locale')->name('locale');
+Route::prefix('{locale}')
+    ->whereIn('locale', ['pt-br', 'en'])
+    ->middleware('locale')
+    ->group(function () {
 
-Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
+        Route::get('/', function () {
+            return view('pages.home');
+        })->name('locale');
+
+        Route::post('/contact', [ContactController::class, 'store'])
+            ->name('contact.store');
+    });

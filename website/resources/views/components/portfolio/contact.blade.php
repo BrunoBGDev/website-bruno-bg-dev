@@ -72,7 +72,7 @@
                     </div>
                 @endif
 
-                <form action="{{ route('contact.store') }}" method="POST" class="space-y-5">
+                <form action="{{ route('contact.store', ['locale' => request()->route('locale')]) }}" method="POST" class="space-y-5">
                     @csrf
 
                     <div>
